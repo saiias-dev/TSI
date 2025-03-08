@@ -1,15 +1,22 @@
-import React, { PureComponent, ReactNode } from 'react'
+import React, { ReactNode } from "react";
+import { Component } from "react";
+import {Button} from "../components/Button";
+import {Container} from "../components/Container"
+import {Text} from "../components/Text"
+import {Input} from "../components/Input"   
 
-interface Props {}
-interface State {}
-
-class About extends PureComponent<Props, State> {
-    
-    render(): ReactNode {
+export default class About extends Component {
+    render() : ReactNode {
         return (
-            <div>О нас</div>
-        )
+            <Container>
+            <div className="flex gap-4 mb-4 md:grid-cols-2">
+                <Input color='primary' size='large' title=''/>
+                <Input color='secondary' size='large' title=''/>
+                <Input color='third' size='large' title=''/>
+                <Input color='fourth' size='large' title=''/>
+            </div> 
+            </Container>
+        );
     }
 }
 
-export default About

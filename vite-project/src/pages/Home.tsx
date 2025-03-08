@@ -1,16 +1,18 @@
-import React, { PureComponent, ReactNode } from 'react'
+import React, { ReactNode } from "react";
+import { Component } from "react";
+import {Button} from "../components/Button";
+import {Container} from "../components/Container"
 
-interface Props {}
-interface State {}
-
-class Home extends PureComponent<Props, State> {
-    
-
-    render(): ReactNode {
+export default class Home extends Component {
+    render() : ReactNode {
         return (
-            <div>Главная</div>
-        )
+            <Container>
+            <div className="flex gap-4">
+                <Button color="primary" size="large" title="Подтвердить"/>
+                <Button color="secondary" size="large" title="Удалить"/>
+            </div> 
+            </Container>
+        );
     }
 }
 
-export default Home

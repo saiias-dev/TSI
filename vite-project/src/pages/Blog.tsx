@@ -1,15 +1,22 @@
-import React, { PureComponent, ReactNode } from 'react'
+import React, { ReactNode } from "react";
+import { Component } from "react";
+import {Button} from "../components/Button";
+import {Container} from "../components/Container"
+import {Text} from "../components/Text"
 
-interface Props {}
-interface State {}
-
-class Blog extends PureComponent<Props, State> {
-
-    render(): ReactNode {
+export default class Blog extends Component {
+    render() : ReactNode {
         return (
-            <div>Блог</div>
-        )
+            <Container>
+            <div className="flex gap-4">
+                <Text color="primary" size="large" title="Диза́йн (от англ. design — рисовать, чертить, задумывать, а также проект, план, рисунок) — деятельность по проектированию эстетических свойств промышленных изделий («художественное конструирование»[1]), а также результат этой деятельности (например, в таких словосочетаниях, как «дизайн автомобиля»)[2].
+                    Считается, что в более широком смысле дизайн не только призван к художественному конструированию, но и должен участвовать в решении более широких социально-технических проблем функционирования производства, потребления, существования людей в предметной среде, путём рационального построения её визуальных и функциональных свойств[2].
+                    Теоретической основой дизайна является техническая эстетика[3].
+                    Термин «промышленный дизайн» был утверждён решением первой генеральной ассамблеи ICSID (International Council of Societies of Industrial Design, Международного совета организаций промышленного дизайна) в 1959 году; термин «дизайн» является профессиональным сокращением термина «промышленный дизайн»[2].
+                    Под словом «design» англоязычная литература начала XXI века понимает и стиль, и проект, и проектирование, и собственно «дизайн» — профессиональную деятельность, наряду с архитектурой или инженерным проектированием[4]."/>
+            </div> 
+            </Container>
+        );
     }
 }
 
-export default Blog
