@@ -21,7 +21,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
           </Routes>
         </BrowserRouter>
-        <Footer/>
+        <Footer class/>
         </>
       )
 }

@@ -7,8 +7,8 @@ export const Button = (props) => {
     const classes = {
         colors: {
             primary: {
-                button: "bg-amber-700",
-                text: "text-red",
+                button: "bg-sky-500",
+                text: "text-white",
             },
             secondary: {
                 button: "bg-red-500",

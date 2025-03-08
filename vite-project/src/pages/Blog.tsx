@@ -1,6 +1,5 @@
 import React, { ReactNode } from "react";
 import { Component } from "react";
-import {Button} from "../components/Button";
 import {Container} from "../components/Container"
 import {Text} from "../components/Text"
 
