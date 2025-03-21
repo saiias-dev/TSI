@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Footer from './components/Footer';
 import Blog from './pages/Blog';
+import Cart from './pages/Cart';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/cart" element={<Cart />} />
           </Routes>
         </BrowserRouter>
         <Footer class/>
