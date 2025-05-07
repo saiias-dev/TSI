@@ -23,12 +23,9 @@ export const About = () => {
     return (
       <Container>
         <Helmet>
-          <title>About</title>
+        <title>About</title>
           <meta name="description" content="Страница о нас"></meta>
-          <meta
-            name="keywords"
-            content="Контакты, ключевые слова для SEO"
-          ></meta>
+          <meta name="keywords" content="Контакты, ключевые слова для SEO"></meta>
         </Helmet>
         <div>
           <h1>Заголовок</h1>

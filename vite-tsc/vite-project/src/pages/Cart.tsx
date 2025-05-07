@@ -2,6 +2,7 @@ import React, { ReactNode, useState } from "react";
 import { Component } from "react";
 import { Container } from "../components/Container";
 import { Button } from "../components/Button";
+import { Helmet } from "react-helmet";
 
 interface CartProps {}
 
@@ -74,6 +75,11 @@ const Counter: React.FC = () => {
 
   return (
     <Container>
+      <Helmet>
+      <title>Cart</title>
+          <meta name="description" content="Страница о нас"></meta>
+          <meta name="keywords" content="Корзина товаров"></meta>
+      </Helmet>
       <div className="flex flex-col gap-4 items-center justify-center">
         <div>
           {/* Новая форма для ввода данных */}
